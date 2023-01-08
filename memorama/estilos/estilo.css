@@ -1,0 +1,50 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+header {
+    font-size: 25px;
+    text-align: center;
+}
+main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container_img {
+    width: 200px;
+    height: 20vh;
+    background-color: lightblue;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.girarDest {
+    animation: girar 1s;
+}
+
+.girarTapar {
+    animation: girar 1s;
+}
+
+@keyframes girar {
+    0%{ transform: scaleX(1);}
+    50% { transform: scaleX(0);}
+    60% { transform: scaleX(0);}
+    100% { transform: scaleX(1);}
+}
+
+
+
+.container_img img {
+    width: auto;
+    height: 100%;
+}
+

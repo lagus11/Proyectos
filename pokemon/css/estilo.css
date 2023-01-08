@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px 15px;
+    background-color: lightgray;
+}
+
+.contenedor {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 4fr 1fr;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+}
+
+/* --- HEADER --- */
+header {
+    grid-area: header;
+    background-color: rgb(11, 35, 77);
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0 10px 20px;
+
+}
+
+#titulo {
+    font-size: 1.2rem;
+    color: white;
+    margin-left: 10px;
+}
+
+/* --- MAIN --- */
+main {
+    grid-area: main;
+    background-color: rgb(202, 199, 199);
+}
+
+#contenedor_pokemon {
+    width: 80%;
+    height: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0;
+}
+
+#contenedor_tipoPokemon {
+    width: 60%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "encabezadoP"
+                         "contenidoP";
+}
+
+#encabezado_pokemon {
+    grid-area: encabezadoP;
+    min-width: 60%;
+
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-size: 1.3rem;
+
+}
+#encabezado_pokemon h2 {
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+#contenedor_imgPokemon {
+    grid-area: contenidoP;
+}
+
+#pokemon {
+    display: block;
+    margin: auto;
+    width: 70%;
+}
+
+/* --- PARTE 2 ---*/
+#contenedor_estadisticas {
+    width: 40%;
+    min-width: 250px;
+    height: 100%;
+    min-height: 350px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 3px 3px 5px gray;
+}
+
+#datos_pokemon_p1, #datos_pokemon_p2 {
+    min-width: 40%;
+}
+
+
+.contenedor_datosPokemon {
+    width: 100%;
+    height: 150px;
+    place-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.contenedor_datosPokemon:hover {
+    background-color: lightgray;
+    box-shadow: 3px 3px 10px rgb(11, 35, 77);
+}
+
+
+.contenedor_datosPokemon h3 {
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+.contenedor_datosPokemon p {
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 1.4rem;
+}
+
+
+/* --- FOOTER --- */
+footer {
+    grid-area: footer;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h3 {
+    width: 200px;
+    text-align: center;
+}
+
+#otros_pokemones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px 50px;
+  
+} 
+
+.other_pokemones {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(202, 199, 199);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#img_other_pokemones {
+    width: 80%;
+}
+
+.other_pokemones:hover {
+    background-color: rgb(151, 147, 147);
+    box-shadow: 3px 3px 10px rgb(11, 35, 77);
+    image-resolution: 86%;
+}
+
+/* ---- TABLES ------ */
+@media (max-width: 850px){
+  
+    body {
+          min-width: auto ;
+      }
+    
+    #contenedor_pokemon {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    #pokemon {
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+
+    #contenedor_estadisticas {
+        width: 50%;
+        height: 100%;
+        margin: auto;
+    }
+
+    #contenedor_tipoPokemon{
+        margin: auto;
+    }
+
+    #otros_pokemones {
+        display: grid;
+        grid-template-columns: 100px 100px;
+        row-gap: 10px;
+        height: auto;
+        overflow: scroll;
+    }
+    
+    .other_pokemones {
+    width: 100%;
+    height: 150px;
+ 
+}
+
+    .contenedor_datosPokemon {
+        width: 100px;
+        height: 100px;
+    }
+    
+    
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer h3 {
+        margin: 10px 0;
+    }
+
+    #encabezado_pokemon {
+        min-width: 100%;
+
+    }
+}

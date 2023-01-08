@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link href="css/estilo.css" rel="stylesheet"/>
+</head>
+<body onload="cargarPokemonPrincipal()">
+
+    <div class="contenedor">
+        <header>
+            <img src="img/logo.png" id="logo"/>
+            <h1 id="titulo">pokédex_</h1>
+        </header>
+    
+        <main>
+                <div id="contenedor_pokemon">
+                    
+                    <div id="contenedor_tipoPokemon">
+                        <div id="encabezado_pokemon">
+                            <img src="img/tipoFuego.png" id="tipoElemento"/>
+                            <h2 id="nombre_pokemon"></h2>
+                        </div>
+                        <div id="contenedor_imgPokemon">
+                            <img id="pokemon" src="img/Charizard.png">
+                        </div>
+                    </div>
+                    <div id="contenedor_estadisticas">
+                        <div id="datos_pokemon_p1">
+                            <div class="contenedor_datosPokemon">
+                                <h3>NO.</h3>
+                                <p id="numero_Pokemon"></p>
+                            </div>
+                            <div class="contenedor_datosPokemon">
+                                <h3>TYPE</h3>
+                                <p id="tipo_Pokemon"></p>
+                            </div>
+                            <div class="contenedor_datosPokemon">
+                                <h3>HEIGHT</h3>
+                                <p id="height_Pokemon"></p>
+                            </div>
+                        </div>
+
+                        <div id="datos_pokemon_p2">
+                            <div class="contenedor_datosPokemon">
+                                <h3>LEVEL</h3>
+                                <p id="level_Pokemon"></p>
+                            </div>
+                            <div class="contenedor_datosPokemon">
+                                <h3>HABILITY</h3>
+                                <p id="hability_Pokemon"></p>
+                            </div>
+                            <div class="contenedor_datosPokemon">
+                                <h3>WEIGHT</h3>
+                                <p id="weight_Pokemon"></p>
+                            </div> 
+                        </div>
+                    </div>
+
+                </div>
+        </main>
+    
+        <footer>
+            <h3>OTHERS</h3>
+            <div id="otros_pokemones">
+            </div>
+        </footer>    
+    </div>
+
+    <script src="js/pokemon.js"></script>
+    <script src="js/app.js"></script>
+    
+    
+</body>
+</html>

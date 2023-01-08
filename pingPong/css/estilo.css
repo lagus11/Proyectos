@@ -1,0 +1,84 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+
+}
+
+.tablero {
+    width: 900px;
+    height: 70px;
+    background-color: black;
+    border: double 4px white;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#tiempo {
+    width: 50%;
+    font-size: 1.3rem;
+    color: white;
+    margin: 20px 0 0 0;
+}
+
+#marcador {
+    font-size: 1.3rem;
+    color: white;
+    margin: 20px 0 0 0;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor {
+    background-color: black;
+    width: 900px;
+    height: 700px;
+    margin: 0 auto;
+    border: double 4px white;
+    display: flex;
+
+}
+
+.area-Player1 {
+    width: 50%;
+    height: auto;
+    border-right: dashed 5px white;
+  
+}
+
+.area-Player2 {
+    width: 50%;
+    height: auto;
+    border-left: dashed 5px white;
+}
+
+#player1 {
+    background-color: white;
+    width: 20px;
+    height: 100px;
+    position: absolute;
+    margin: 10px 0 0 10px;
+}
+
+#player2 {
+    background-color: white;
+    width: 20px;
+    height: 100px;
+    position: absolute;
+    margin: 10px 0 0 416px;
+}
+
+#ball {
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    position: absolute;
+    margin: 346px 0 0 440px ;
+}
